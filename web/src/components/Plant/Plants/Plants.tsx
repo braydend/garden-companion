@@ -1,10 +1,6 @@
 import humanize from 'humanize-string'
 
 import { Link, routes } from '@redwoodjs/router'
-import { useMutation } from '@redwoodjs/web'
-import { toast } from '@redwoodjs/web/toast'
-
-import { QUERY } from 'src/components/Plant/PlantsCell'
 
 const MAX_STRING_LENGTH = 150
 
@@ -51,28 +47,20 @@ const PlantsList = ({ plants }) => {
       <table className="rw-table">
         <thead>
           <tr>
-            <th>Id</th>
             <th>Name</th>
-            <th>Notes</th>
-            <th>&nbsp;</th>
           </tr>
         </thead>
         <tbody>
           {plants.map((plant) => (
             <tr key={plant.id}>
-              <td>{truncate(plant.id)}</td>
-              <td>{truncate(plant.name)}</td>
-              <td>{truncate(plant.notes)}</td>
               <td>
-                <nav className="rw-table-actions">
-                  <Link
-                    to={routes.plant({ id: plant.id })}
-                    title={'Show plant ' + plant.id + ' detail'}
-                    className="rw-button rw-button-small"
-                  >
-                    Show
-                  </Link>
-                </nav>
+                <Link
+                  to={routes.plant({ id: plant.id })}
+                  title={'Show plant ' + plant.id + ' detail'}
+                  className="hover:underline"
+                >
+                  {truncate(plant.name)}{' '}
+                </Link>
               </td>
             </tr>
           ))}
