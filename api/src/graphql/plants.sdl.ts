@@ -3,6 +3,8 @@ export const schema = gql`
     id: String!
     name: String!
     notes: String
+    positiveCompanions: [Plant]!
+    positiveCompanionsRelation: [Plant]!
   }
 
   type Query {

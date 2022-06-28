@@ -15,4 +15,7 @@ model Plant {
   id    String     @id @default(cuid())
   name  String
   notes String?
+  positiveCompanions   Plant[]   @relation("PositiveCompanions")
+  // Can be ignored in data fetching. Only required to hold many-to-many relationship data
+  positiveCompanionsRelation  Plant[]  @relation("PositiveCompanions")
 }
