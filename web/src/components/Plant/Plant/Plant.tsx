@@ -1,5 +1,7 @@
 import humanize from 'humanize-string'
 
+import { Link, routes } from '@redwoodjs/router'
+
 const formatEnum = (values: string | string[] | null | undefined) => {
   if (values) {
     if (Array.isArray(values)) {
@@ -34,26 +36,55 @@ const checkboxInputTag = (checked) => {
 }
 
 const Plant = ({ plant }) => {
+  const hasPositiveCompanions = plant.positiveCompanions.length > 0
+
   return (
     <>
       <div className="rw-segment">
         <header className="rw-segment-header">
-          <h2 className="rw-heading rw-heading-secondary">Plant {plant.id} Detail</h2>
+          <h2 className="rw-heading rw-heading-secondary">
+            Plant {plant.id} Detail
+          </h2>
         </header>
         <table className="rw-table">
           <tbody>
             <tr>
               <th>Id</th>
               <td>{plant.id}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Name</th>
               <td>{plant.name}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Notes</th>
               <td>{plant.notes}</td>
             </tr>
           </tbody>
         </table>
+
+        <section className={'bg-lime-200 p-4 w-1/2'}>
+          <h2 className={'text-2xl'}>Positive Companions</h2>
+          <div className={'p-8'}>
+            {hasPositiveCompanions ? (
+              <ul>
+                {plant.positiveCompanions?.map(({ id, name }) => (
+                  <li key={id} className={'list-disc'}>
+                    <Link
+                      to={routes.plant({ id })}
+                      title={'Show plant ' + id + ' detail'}
+                      className={'hover:underline'}
+                    >
+                      {name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <span>This plant has no positive companions</span>
+            )}
+          </div>
+        </section>
       </div>
     </>
   )
