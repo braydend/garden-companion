@@ -10,6 +10,10 @@ export const QUERY = gql`
       id
       name
       notes
+      positiveCompanions {
+        name
+        id
+      }
     }
   }
 `
