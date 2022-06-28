@@ -1,4 +1,8 @@
-import type { QueryResolvers, MutationResolvers } from 'types/graphql'
+import type {
+  QueryResolvers,
+  MutationResolvers,
+  PlantResolvers,
+} from 'types/graphql'
 
 import { db } from 'src/lib/db'
 
@@ -32,4 +36,13 @@ export const deletePlant: MutationResolvers['deletePlant'] = ({ id }) => {
   return db.plant.delete({
     where: { id },
   })
+}
+
+export const Plant: PlantResolvers = {
+  positiveCompanions: (_obj, { root }) =>
+    db.plant.findUnique({ where: { id: root.id } }).positiveCompanions(),
+  positiveCompanionsRelation: (_obj, { root }) =>
+    db.plant
+      .findUnique({ where: { id: root.id } })
+      .positiveCompanionsRelation(),
 }
