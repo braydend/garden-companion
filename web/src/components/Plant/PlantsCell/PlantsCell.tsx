@@ -1,6 +1,5 @@
 import type { FindPlants } from 'types/graphql'
 
-import { Link, routes } from '@redwoodjs/router'
 import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
 
 import Plants from 'src/components/Plant/Plants'
@@ -18,11 +17,7 @@ export const QUERY = gql`
 export const Loading = () => <div>Loading...</div>
 
 export const Empty = () => {
-  return (
-    <div className="rw-text-center">
-      {'No plants yet. '}
-    </div>
-  )
+  return <div className="rw-text-center">{'No plants yet. '}</div>
 }
 
 export const Failure = ({ error }: CellFailureProps) => (

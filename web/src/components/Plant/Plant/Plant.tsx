@@ -42,23 +42,13 @@ const Plant = ({ plant }) => {
     <>
       <div className="rw-segment">
         <header className="rw-segment-header">
-          <h2 className="rw-heading rw-heading-secondary">
-            Plant {plant.id} Detail
-          </h2>
+          <h2 className="rw-heading rw-heading-secondary">{plant.name}</h2>
         </header>
         <table className="rw-table">
           <tbody>
             <tr>
-              <th>Id</th>
-              <td>{plant.id}</td>
-            </tr>
-            <tr>
-              <th>Name</th>
-              <td>{plant.name}</td>
-            </tr>
-            <tr>
               <th>Notes</th>
-              <td>{plant.notes}</td>
+              <td>{plant.notes ?? '-'}</td>
             </tr>
           </tbody>
         </table>
