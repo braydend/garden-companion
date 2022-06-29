@@ -4,7 +4,9 @@ export const schema = gql`
     name: String!
     notes: String
     positiveCompanions: [Plant]!
+    negativeCompanions: [Plant]!
     positiveCompanionsRelation: [Plant]!
+    negativeCompanionsRelation: [Plant]!
   }
 
   type Query {
