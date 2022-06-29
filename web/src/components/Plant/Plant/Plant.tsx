@@ -40,6 +40,7 @@ const checkboxInputTag = (checked) => {
 
 const Plant = ({ plant }) => {
   const hasPositiveCompanions = plant.positiveCompanions.length > 0
+  const hasNegativeCompanions = plant.negativeCompanions.length > 0
 
   return (
     <>
@@ -76,6 +77,28 @@ const Plant = ({ plant }) => {
                 </ul>
               ) : (
                 <span>This plant has no positive companions</span>
+              )}
+            </div>
+          </Card>
+          <Card variant={'red'}>
+            <Heading level={3} label={'Negative Companions'} />
+            <div className={'p-8'}>
+              {hasNegativeCompanions ? (
+                <ul>
+                  {plant.negativeCompanions?.map(({ id, name }) => (
+                    <li key={id} className={'list-disc'}>
+                      <Link
+                        to={routes.plant({ id })}
+                        title={'Show plant ' + id + ' detail'}
+                        className={'hover:underline'}
+                      >
+                        {name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <span>This plant has no negative companions</span>
               )}
             </div>
           </Card>
