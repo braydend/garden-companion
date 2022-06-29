@@ -1,3 +1,5 @@
+import Heading from 'src/components/Heading/Heading'
+
 export default () => (
   <main>
     <style
@@ -25,20 +27,11 @@ export default () => (
                 margin: 0 auto;
                 box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
               }
-              h1 {
-                font-size: 2rem;
-                margin: 0;
-                font-weight: 500;
-                line-height: 1;
-                color: #2D3748;
-              }
             `,
       }}
     />
     <section>
-      <h1>
-        <span>404 Page Not Found</span>
-      </h1>
+      <Heading label={'404 Page Not Found'} level={1} />
     </section>
   </main>
 )

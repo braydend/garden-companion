@@ -8,6 +8,8 @@
 // thoughtful. =)
 
 // Ensures that production builds do not include the error page
+import Heading from 'src/components/Heading/Heading'
+
 let RedwoodDevFatalErrorPage = undefined
 if (process.env.NODE_ENV === 'development') {
   RedwoodDevFatalErrorPage =
@@ -42,20 +44,11 @@ export default RedwoodDevFatalErrorPage ||
                 margin: 0 auto;
                 box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
               }
-              h1 {
-                font-size: 2rem;
-                margin: 0;
-                font-weight: 500;
-                line-height: 1;
-                color: #2D3748;
-              }
             `,
         }}
       />
       <section>
-        <h1>
-          <span>Something went wrong</span>
-        </h1>
+        <Heading label={'Something went wrong'} level={1} />
       </section>
     </main>
   ))
