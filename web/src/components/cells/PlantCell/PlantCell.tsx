@@ -2,7 +2,7 @@ import type { FindPlantById } from 'types/graphql'
 
 import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
 
-import Plant from 'src/components/Plant/Plant'
+import { Plant } from 'src/components/organisms'
 
 export const QUERY = gql`
   query FindPlantById($id: String!) {
