@@ -14,6 +14,10 @@ export const QUERY = gql`
         name
         id
       }
+      negativeCompanions {
+        name
+        id
+      }
     }
   }
 `
