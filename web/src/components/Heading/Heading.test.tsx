@@ -1,22 +1,18 @@
 import { ComponentProps } from 'react'
 
-import { render, screen } from '@redwoodjs/testing/web'
+import { screen } from '@redwoodjs/testing/web'
+
+import { setUpComponentTest } from 'src/utils/testUtils'
 
 import Heading from './Heading'
 
 type Props = ComponentProps<typeof Heading>
 
 describe('Heading', () => {
-  const defaultProps: Props = {
+  const setUp = setUpComponentTest<Props>(Heading, {
     level: 1,
     label: 'Dummy Heading',
-  }
-
-  const setUp = (customProps?: Partial<Props>) => {
-    const props = { ...defaultProps, ...customProps }
-
-    return render(<Heading {...props} />)
-  }
+  })
 
   it.each<[Props['level'], Props['label']]>([
     [1, 'Level One Heading'],
