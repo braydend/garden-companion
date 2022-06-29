@@ -2,6 +2,8 @@ import humanize from 'humanize-string'
 
 import { Link, routes } from '@redwoodjs/router'
 
+import Heading from 'src/components/Heading/Heading'
+
 const formatEnum = (values: string | string[] | null | undefined) => {
   if (values) {
     if (Array.isArray(values)) {
@@ -42,7 +44,7 @@ const Plant = ({ plant }) => {
     <>
       <div className="rw-segment">
         <header className="rw-segment-header">
-          <h2 className="rw-heading rw-heading-secondary">{plant.name}</h2>
+          <Heading level={2} label={plant.name} />
         </header>
         <table className="rw-table">
           <tbody>
@@ -54,7 +56,7 @@ const Plant = ({ plant }) => {
         </table>
 
         <section className={'bg-lime-200 p-4 w-1/2'}>
-          <h2 className={'text-2xl'}>Positive Companions</h2>
+          <Heading level={3} label={'Positive Companions'} />
           <div className={'p-8'}>
             {hasPositiveCompanions ? (
               <ul>
