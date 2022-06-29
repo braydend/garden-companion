@@ -41,8 +41,14 @@ export const deletePlant: MutationResolvers['deletePlant'] = ({ id }) => {
 export const Plant: PlantResolvers = {
   positiveCompanions: (_obj, { root }) =>
     db.plant.findUnique({ where: { id: root.id } }).positiveCompanions(),
+  negativeCompanions: (_obj, { root }) =>
+    db.plant.findUnique({ where: { id: root.id } }).negativeCompanions(),
   positiveCompanionsRelation: (_obj, { root }) =>
     db.plant
       .findUnique({ where: { id: root.id } })
       .positiveCompanionsRelation(),
+  negativeCompanionsRelation: (_obj, { root }) =>
+    db.plant
+      .findUnique({ where: { id: root.id } })
+      .negativeCompanionsRelation(),
 }

@@ -16,6 +16,8 @@ model Plant {
   name  String
   notes String?
   positiveCompanions   Plant[]   @relation("PositiveCompanions")
+  negativeCompanions   Plant[]   @relation("NegativeCompanions")
   // Can be ignored in data fetching. Only required to hold many-to-many relationship data
   positiveCompanionsRelation  Plant[]  @relation("PositiveCompanions")
+  negativeCompanionsRelation  Plant[]  @relation("NegativeCompanions")
 }
