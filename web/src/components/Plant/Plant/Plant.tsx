@@ -1,6 +1,7 @@
 import { Link, routes } from '@redwoodjs/router'
 
 import { Card, Heading } from 'src/components/atoms'
+import { CompanionCard } from 'src/components/molecules'
 
 const Plant = ({ plant }) => {
   const hasPositiveCompanions = plant.positiveCompanions.length > 0
@@ -22,50 +23,14 @@ const Plant = ({ plant }) => {
         </table>
 
         <section className={'grid grid-cols-2 gap-2'}>
-          <Card variant={'green'}>
-            <Heading level={3} label={'Positive Companions'} />
-            <div className={'p-8'}>
-              {hasPositiveCompanions ? (
-                <ul>
-                  {plant.positiveCompanions?.map(({ id, name }) => (
-                    <li key={id} className={'list-disc'}>
-                      <Link
-                        to={routes.plant({ id })}
-                        title={'Show plant ' + id + ' detail'}
-                        className={'hover:underline'}
-                      >
-                        {name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <span>This plant has no positive companions</span>
-              )}
-            </div>
-          </Card>
-          <Card variant={'red'}>
-            <Heading level={3} label={'Negative Companions'} />
-            <div className={'p-8'}>
-              {hasNegativeCompanions ? (
-                <ul>
-                  {plant.negativeCompanions?.map(({ id, name }) => (
-                    <li key={id} className={'list-disc'}>
-                      <Link
-                        to={routes.plant({ id })}
-                        title={'Show plant ' + id + ' detail'}
-                        className={'hover:underline'}
-                      >
-                        {name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <span>This plant has no negative companions</span>
-              )}
-            </div>
-          </Card>
+          <CompanionCard
+            variant={'positive'}
+            plants={plant.positiveCompanions}
+          />
+          <CompanionCard
+            variant={'negative'}
+            plants={plant.negativeCompanions}
+          />
         </section>
       </div>
     </>
