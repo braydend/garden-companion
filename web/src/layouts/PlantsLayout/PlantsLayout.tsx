@@ -1,7 +1,7 @@
 import { Link, routes } from '@redwoodjs/router'
 import { Toaster } from '@redwoodjs/web/toast'
 
-import Heading from 'src/components/Heading/Heading'
+import { Heading } from 'src/components/atoms'
 
 type PlantLayoutProps = {
   children: React.ReactNode

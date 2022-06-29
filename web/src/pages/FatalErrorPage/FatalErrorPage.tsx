@@ -7,9 +7,9 @@
 // still render a generic error page, but your users will prefer something a bit more
 // thoughtful. =)
 
-// Ensures that production builds do not include the error page
-import Heading from 'src/components/Heading/Heading'
+import { Heading } from 'src/components/atoms'
 
+// Ensures that production builds do not include the error page
 let RedwoodDevFatalErrorPage = undefined
 if (process.env.NODE_ENV === 'development') {
   RedwoodDevFatalErrorPage =

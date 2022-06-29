@@ -1,4 +1,4 @@
-import Heading from 'src/components/Heading/Heading'
+import { Heading } from 'src/components/atoms'
 
 export default () => (
   <main>

@@ -18,12 +18,10 @@ const getVariantClasses = (variant: CardVariants) => {
   }
 }
 
-const Card: React.FC<Props> = ({ variant, children, className }) => {
+export const Card: React.FC<Props> = ({ variant, children, className }) => {
   return (
     <section className={classNames(getVariantClasses(variant), className)}>
       {children}
     </section>
   )
 }
-
-export default Card
