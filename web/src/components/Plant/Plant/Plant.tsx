@@ -2,6 +2,7 @@ import humanize from 'humanize-string'
 
 import { Link, routes } from '@redwoodjs/router'
 
+import Card from 'src/components/Card/Card'
 import Heading from 'src/components/Heading/Heading'
 
 const formatEnum = (values: string | string[] | null | undefined) => {
@@ -55,27 +56,29 @@ const Plant = ({ plant }) => {
           </tbody>
         </table>
 
-        <section className={'bg-lime-200 p-4 w-1/2'}>
-          <Heading level={3} label={'Positive Companions'} />
-          <div className={'p-8'}>
-            {hasPositiveCompanions ? (
-              <ul>
-                {plant.positiveCompanions?.map(({ id, name }) => (
-                  <li key={id} className={'list-disc'}>
-                    <Link
-                      to={routes.plant({ id })}
-                      title={'Show plant ' + id + ' detail'}
-                      className={'hover:underline'}
-                    >
-                      {name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <span>This plant has no positive companions</span>
-            )}
-          </div>
+        <section className={'grid grid-cols-2 gap-2'}>
+          <Card variant={'green'}>
+            <Heading level={3} label={'Positive Companions'} />
+            <div className={'p-8'}>
+              {hasPositiveCompanions ? (
+                <ul>
+                  {plant.positiveCompanions?.map(({ id, name }) => (
+                    <li key={id} className={'list-disc'}>
+                      <Link
+                        to={routes.plant({ id })}
+                        title={'Show plant ' + id + ' detail'}
+                        className={'hover:underline'}
+                      >
+                        {name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <span>This plant has no positive companions</span>
+              )}
+            </div>
+          </Card>
         </section>
       </div>
     </>
