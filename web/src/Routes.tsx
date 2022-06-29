@@ -9,12 +9,12 @@
 
 import { Set, Router, Route } from '@redwoodjs/router'
 
-import PlantsLayout from 'src/layouts/PlantsLayout'
+import DefaultLayout from 'src/layouts/DefaultLayout'
 
 const Routes = () => {
   return (
     <Router>
-      <Set wrap={PlantsLayout}>
+      <Set wrap={DefaultLayout}>
         <Route path="/plants/{id}" page={PlantPlantPage} name="plant" />
         <Route path="/plants" page={PlantPlantsPage} name="plants" />
       </Set>
