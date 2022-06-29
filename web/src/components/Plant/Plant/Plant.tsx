@@ -1,42 +1,6 @@
-import humanize from 'humanize-string'
-
 import { Link, routes } from '@redwoodjs/router'
 
-import Card from 'src/components/Card/Card'
-import Heading from 'src/components/Heading/Heading'
-
-const formatEnum = (values: string | string[] | null | undefined) => {
-  if (values) {
-    if (Array.isArray(values)) {
-      const humanizedValues = values.map((value) => humanize(value))
-      return humanizedValues.join(', ')
-    } else {
-      return humanize(values as string)
-    }
-  }
-}
-
-const jsonDisplay = (obj) => {
-  return (
-    <pre>
-      <code>{JSON.stringify(obj, null, 2)}</code>
-    </pre>
-  )
-}
-
-const timeTag = (datetime) => {
-  return (
-    datetime && (
-      <time dateTime={datetime} title={datetime}>
-        {new Date(datetime).toUTCString()}
-      </time>
-    )
-  )
-}
-
-const checkboxInputTag = (checked) => {
-  return <input type="checkbox" checked={checked} disabled />
-}
+import { Card, Heading } from 'src/components/atoms'
 
 const Plant = ({ plant }) => {
   const hasPositiveCompanions = plant.positiveCompanions.length > 0

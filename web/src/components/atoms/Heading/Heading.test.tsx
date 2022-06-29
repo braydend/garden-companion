@@ -4,7 +4,7 @@ import { screen } from '@redwoodjs/testing/web'
 
 import { setUpComponentTest } from 'src/utils/testUtils'
 
-import Heading from './Heading'
+import { Heading } from './Heading'
 
 type Props = ComponentProps<typeof Heading>
 

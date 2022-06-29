@@ -6,7 +6,7 @@ type Props = {
   className?: string
 }
 
-const Heading: React.FC<Props> = ({ label, level, className }) => {
+export const Heading: React.FC<Props> = ({ label, level, className }) => {
   const getComponent = (
     selectedLevel: Props['level']
   ): ((
@@ -50,5 +50,3 @@ const Heading: React.FC<Props> = ({ label, level, className }) => {
     </Component>
   )
 }
-
-export default Heading
