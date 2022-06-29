@@ -1,4 +1,4 @@
-import PlantCell from 'src/components/Plant/PlantCell'
+import PlantCell from 'src/components/cells/PlantCell'
 
 type PlantPageProps = {
   id: string

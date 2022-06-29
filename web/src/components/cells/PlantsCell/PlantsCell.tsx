@@ -2,7 +2,7 @@ import type { FindPlants } from 'types/graphql'
 
 import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
 
-import Plants from 'src/components/Plant/Plants'
+import { PlantsList } from 'src/components/organisms'
 
 export const QUERY = gql`
   query FindPlants {
@@ -25,5 +25,5 @@ export const Failure = ({ error }: CellFailureProps) => (
 )
 
 export const Success = ({ plants }: CellSuccessProps<FindPlants>) => {
-  return <Plants plants={plants} />
+  return <PlantsList plants={plants} />
 }

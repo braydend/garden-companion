@@ -1,12 +1,16 @@
-import { Link, routes } from '@redwoodjs/router'
+import { Plant as GQLPlant } from 'types/graphql'
 
-import { Card, Heading } from 'src/components/atoms'
+import { Heading } from 'src/components/atoms'
 import { CompanionCard } from 'src/components/molecules'
 
-const Plant = ({ plant }) => {
-  const hasPositiveCompanions = plant.positiveCompanions.length > 0
-  const hasNegativeCompanions = plant.negativeCompanions.length > 0
+type Props = {
+  plant: Omit<
+    GQLPlant,
+    'negativeCompanionsRelation' | 'positiveCompanionsRelation'
+  >
+}
 
+export const Plant: React.FC<Props> = ({ plant }) => {
   return (
     <>
       <div className="rw-segment">
@@ -36,5 +40,3 @@ const Plant = ({ plant }) => {
     </>
   )
 }
-
-export default Plant

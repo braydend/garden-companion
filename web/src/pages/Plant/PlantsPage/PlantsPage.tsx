@@ -1,4 +1,4 @@
-import PlantsCell from 'src/components/Plant/PlantsCell'
+import PlantsCell from 'src/components/cells/PlantsCell'
 
 const PlantsPage = () => {
   return <PlantsCell />

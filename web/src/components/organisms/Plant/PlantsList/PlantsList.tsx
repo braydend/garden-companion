@@ -10,7 +10,7 @@ const truncate = (text) => {
   return output
 }
 
-const PlantsList = ({ plants }) => {
+export const PlantsList = ({ plants }) => {
   return (
     <div className="rw-segment rw-table-wrapper-responsive">
       <table className="rw-table">
@@ -38,5 +38,3 @@ const PlantsList = ({ plants }) => {
     </div>
   )
 }
-
-export default PlantsList
