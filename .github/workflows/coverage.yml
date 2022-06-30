@@ -16,5 +16,5 @@ jobs:
         with:
           test-script: yarn rw test --no-watch
           package-manager: yarn
-          coverage-file: ./coverage/coverage-final.json
-          base-coverage-file: ./coverage/coverage-final.json
+          coverage-file: ./coverage/report.json
+          base-coverage-file: ./coverage/report.json
