@@ -1,17 +1,23 @@
-import { ComponentProps } from 'react'
+import React, { ComponentProps } from 'react'
 
-import { screen } from '@redwoodjs/testing/web'
+import { screen, render } from '@redwoodjs/testing/web'
 
-import { setUpComponentTest } from 'src/utils/testUtils'
-
-import Card from './Card'
+import { Card } from './Card'
 
 type Props = ComponentProps<typeof Card>
 
 describe('Card', () => {
-  const setUp = setUpComponentTest<Props>(Card, {
+  const defaultProps: Props = {
     variant: 'green',
-  })
+  }
+  const setUp = (customProps?: Partial<Props>) => {
+    const props = {
+      ...defaultProps,
+      ...customProps,
+    }
+
+    return render(<Card {...props} />)
+  }
 
   it.each<[Props['variant'], string[]]>([
     ['green', ['bg-emerald-200', 'border-emerald-400']],

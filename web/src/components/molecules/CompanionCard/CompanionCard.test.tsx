@@ -1,18 +1,24 @@
-import { ComponentProps } from 'react'
+import React, { ComponentProps } from 'react'
 
-import { screen } from '@redwoodjs/testing/web'
-
-import { setUpComponentTest } from 'src/utils/testUtils'
+import { screen, render } from '@redwoodjs/testing/web'
 
 import { CompanionCard } from './CompanionCard'
 
 type Props = ComponentProps<typeof CompanionCard>
 
 describe('CompanionCard', () => {
-  const setUp = setUpComponentTest<Props>(CompanionCard, {
+  const defaultProps: Props = {
     variant: 'positive',
     plants: [],
-  })
+  }
+  const setUp = (customProps?: Partial<Props>) => {
+    const props = {
+      ...defaultProps,
+      ...customProps,
+    }
+
+    return render(<CompanionCard {...props} />)
+  }
 
   it('renders successfully', () => {
     expect(() => {
