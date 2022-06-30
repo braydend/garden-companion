@@ -1,26 +1,20 @@
-name: Jest
-
+name: 'coverage'
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
-
+    branches:
+      - master
+      - main
 jobs:
-  build:
-
+  coverage:
+    permissions:
+      checks: write
+      pull-requests: write
+      contents: read
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v1
+      - uses: ArtiomTr/jest-coverage-report-action@v2
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-      - run: yarn install
-      - run: yarn rw test --no-watch
+          test-script: yarn rw test --no-watch
+          package-manager: yarn
+          coverage-file: ./coverage/coverage-final.json
