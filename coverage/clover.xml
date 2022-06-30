@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1656581567796" clover="3.2.0">
+  <project timestamp="1656581567797" name="All files">
+    <metrics statements="121" coveredstatements="68" conditionals="32" coveredconditionals="20" methods="52" coveredmethods="24" elements="205" coveredelements="112" complexity="0" loc="121" ncloc="121" packages="23" files="35" classes="35"/>
+    <package name="api.src.directives.requireAuth">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="requireAuth.ts" path="/Users/braydendiluca/git/garden-companion/api/src/directives/requireAuth/requireAuth.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="api.src.directives.skipAuth">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="skipAuth.ts" path="/Users/braydendiluca/git/garden-companion/api/src/directives/skipAuth/skipAuth.ts">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="api.src.functions">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="graphql.ts" path="/Users/braydendiluca/git/garden-companion/api/src/functions/graphql.ts">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="api.src.graphql">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="plants.sdl.ts" path="/Users/braydendiluca/git/garden-companion/api/src/graphql/plants.sdl.ts">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="api.src.lib">
+      <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+      <file name="auth.ts" path="/Users/braydendiluca/git/garden-companion/api/src/lib/auth.ts">
+        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+      </file>
+      <file name="db.ts" path="/Users/braydendiluca/git/garden-companion/api/src/lib/db.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+      </file>
+      <file name="logger.ts" path="/Users/braydendiluca/git/garden-companion/api/src/lib/logger.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="17" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="api.src.services.plants">
+      <metrics statements="16" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="5"/>
+      <file name="plants.scenarios.ts" path="/Users/braydendiluca/git/garden-companion/api/src/services/plants/plants.scenarios.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="plants.ts" path="/Users/braydendiluca/git/garden-companion/api/src/services/plants/plants.ts">
+        <metrics statements="15" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="5"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="web.src">
+      <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="App.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/App.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+      </file>
+      <file name="Routes.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/Routes.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="18" type="stmt"/>
+      </file>
+    </package>
+    <package name="web.src.components.atoms">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/braydendiluca/git/garden-companion/web/src/components/atoms/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="web.src.components.atoms.Card">
+      <metrics statements="9" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+      <file name="Card.stories.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/components/atoms/Card/Card.stories.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="Card.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/components/atoms/Card/Card.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="13" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/braydendiluca/git/garden-companion/web/src/components/atoms/Card/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="web.src.components.atoms.Heading">
+      <metrics statements="18" coveredstatements="17" conditionals="10" coveredconditionals="10" methods="9" coveredmethods="8"/>
+      <file name="Heading.stories.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/components/atoms/Heading/Heading.stories.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+      <file name="Heading.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/components/atoms/Heading/Heading.tsx">
+        <metrics statements="17" coveredstatements="17" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="8"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="16" type="stmt"/>
+        <line num="18" count="16" type="cond" truecount="5" falsecount="0"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="31" count="16" type="stmt"/>
+        <line num="32" count="16" type="stmt"/>
+        <line num="33" count="16" type="cond" truecount="5" falsecount="0"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="39" count="8" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="47" count="16" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/braydendiluca/git/garden-companion/web/src/components/atoms/Heading/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="web.src.components.cells.PlantCell">
+      <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="PlantCell.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/components/cells/PlantCell/PlantCell.tsx">
+        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="web.src.components.cells.PlantsCell">
+      <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="PlantsCell.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/components/cells/PlantsCell/PlantsCell.tsx">
+        <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="web.src.components.molecules">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/braydendiluca/git/garden-companion/web/src/components/molecules/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="web.src.components.molecules.CompanionCard">
+      <metrics statements="19" coveredstatements="16" conditionals="10" coveredconditionals="8" methods="6" coveredmethods="5"/>
+      <file name="CompanionCard.stories.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/components/molecules/CompanionCard/CompanionCard.stories.tsx">
+        <metrics statements="3" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="CompanionCard.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/components/molecules/CompanionCard/CompanionCard.tsx">
+        <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="8" methods="5" coveredmethods="5"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="6" type="stmt"/>
+        <line num="46" count="6" type="stmt"/>
+        <line num="56" count="2" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/braydendiluca/git/garden-companion/web/src/components/molecules/CompanionCard/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="web.src.components.organisms">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/braydendiluca/git/garden-companion/web/src/components/organisms/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="web.src.components.organisms.Plant">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/braydendiluca/git/garden-companion/web/src/components/organisms/Plant/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="web.src.components.organisms.Plant.Plant">
+      <metrics statements="2" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="Plant.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/components/organisms/Plant/Plant/Plant.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/braydendiluca/git/garden-companion/web/src/components/organisms/Plant/Plant/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="web.src.components.organisms.Plant.PlantsList">
+      <metrics statements="9" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="PlantsList.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/components/organisms/Plant/PlantsList/PlantsList.tsx">
+        <metrics statements="9" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/braydendiluca/git/garden-companion/web/src/components/organisms/Plant/PlantsList/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="web.src.layouts.DefaultLayout">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="DefaultLayout.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/layouts/DefaultLayout/DefaultLayout.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="web.src.pages.FatalErrorPage">
+      <metrics statements="4" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="FatalErrorPage.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/pages/FatalErrorPage/FatalErrorPage.tsx">
+        <metrics statements="4" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="web.src.pages.NotFoundPage">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="NotFoundPage.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/pages/NotFoundPage/NotFoundPage.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="web.src.pages.Plant.PlantPage">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="PlantPage.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/pages/Plant/PlantPage/PlantPage.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="web.src.pages.Plant.PlantsPage">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="PlantsPage.tsx" path="/Users/braydendiluca/git/garden-companion/web/src/pages/Plant/PlantsPage/PlantsPage.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
