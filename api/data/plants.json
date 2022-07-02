@@ -1,0 +1,851 @@
+[
+  {
+    "name": "Apple",
+    "goodNeighbours": [
+      "Nasturtium",
+      "Chives"
+    ],
+    "badNeighbours": [
+      "Potatoes"
+    ],
+    "notes": "Nasturtium climbs tree and is said to repel codling moth",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Apricot",
+    "goodNeighbours": [
+      "Basil",
+      "Tansy",
+      "Asparagus"
+    ],
+    "badNeighbours": [],
+    "notes": "Basil and tansy are said to repel damaging insects",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Asparagus",
+    "goodNeighbours": [
+      "Apricot",
+      "Basil",
+      "Chives",
+      "Comfrey",
+      "Lovage",
+      "Marjoram",
+      "Parsley",
+      "Tomatoes"
+    ],
+    "badNeighbours": [
+      "Garlic",
+      "Onions"
+    ],
+    "notes": "Basil and Parsley are said to improve flavour. Onions and garlic release substances reducing growth.",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Balm (Lemon)",
+    "goodNeighbours": [
+      "Tomatoes"
+    ],
+    "badNeighbours": [],
+    "notes": "Attracts bees, said to enhance flavour and growth",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Basil",
+    "goodNeighbours": [
+      "Tomatoes"
+    ],
+    "badNeighbours": [],
+    "notes": "Basil said to repel flies and mosquitoes",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Beans (climbing)",
+    "goodNeighbours": [
+      "Broccoli",
+      "Brussel Sprouts",
+      "Cabbage",
+      "Carrots",
+      "Cauliflower",
+      "Corn",
+      "Lettuce",
+      "Lovage",
+      "Majoram",
+      "Parsley"
+    ],
+    "badNeighbours": [
+      "Beetroot",
+      "Chives",
+      "Garlic",
+      "Gladiolus",
+      "Onions",
+      "Sunflower"
+    ],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Beetroot",
+    "goodNeighbours": [
+      "Beans (bush)",
+      "Broccoli",
+      "Brussel Sprouts",
+      "Cabbage",
+      "Cauliflower",
+      "Kohl Rabi",
+      "Lettuce",
+      "Lovage",
+      "Marjoram",
+      "Onion",
+      "Peas",
+      "Potato",
+      "Spinach",
+      "Silverbeet"
+    ],
+    "badNeighbours": [
+      "Beans (Climbing)",
+      "Tomato"
+    ],
+    "notes": "Bad Neighbours roots release substances reducing growth",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Borage",
+    "goodNeighbours": [
+      "Squash",
+      "Strawberries",
+      "Tomato"
+    ],
+    "badNeighbours": [],
+    "notes": "Said to deter tomato worm and improve tomato flavour and yield. Said to increase strawberry yield.",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Brassicas (Incl: Broccoli, Cabbage, Cauliflower)",
+    "goodNeighbours": [
+      "Beans",
+      "Beetroot",
+      "Carrots",
+      "Chamomile",
+      "Coriander",
+      "Cucumber",
+      "Dill",
+      "Lettuce",
+      "Lovage",
+      "Marjoram",
+      "Marigold (French)",
+      "Mint",
+      "Nasturtium",
+      "Pea",
+      "Potato",
+      "Rosemary",
+      "Sage",
+      "Tansy",
+      "Thyme",
+      "Zinnias",
+      "Land Cress"
+    ],
+    "badNeighbours": [
+      "Garlic",
+      "Rue",
+      "Strawberry"
+    ],
+    "notes": "Dill attracts a Cabbage White Butterfly controlling wasp. Nasturtium disguises and repels aphids. Sage repels the Cabbage White Butterfly. Zinnias attract ladybirds, which we love! Bad Neighbours’ roots release substances reducing growth.  Land cress attracts Cabbage White Butterfly which lays eggs – when larvae hatch and eat it they die.",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Capsicum, Chilli",
+    "goodNeighbours": [
+      "Carrots",
+      "Onions",
+      "Tomato"
+    ],
+    "badNeighbours": [],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Carrots",
+    "goodNeighbours": [
+      "Beans",
+      "Chives",
+      "Coriander",
+      "Cucumber",
+      "Leeks",
+      "Lettuce",
+      "Lovage",
+      "Marjoram",
+      "Onion",
+      "Pea",
+      "Radish",
+      "Rosemary",
+      "Sage",
+      "Tomato"
+    ],
+    "badNeighbours": [
+      "Dill",
+      "Celery"
+    ],
+    "notes": "Bad Neighbours’ roots release substances reducing growth",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Celery",
+    "goodNeighbours": [
+      "Cabbage",
+      "Chives",
+      "Dill",
+      "Dwarf Beans",
+      "Leek",
+      "Lovage",
+      "Majoram",
+      "Onion",
+      "Pea",
+      "Sage",
+      "Spinach",
+      "Tomato"
+    ],
+    "badNeighbours": [
+      "Carrots",
+      "Parsnip",
+      "Potato"
+    ],
+    "notes": "Bad Neighbours’ roots release substances reducing growth",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Chamomile",
+    "goodNeighbours": [
+      "Cabbage",
+      "Onion"
+    ],
+    "badNeighbours": [],
+    "notes": "Deters flies and mosquitoes. Strengthens neighbouring plants",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Chives",
+    "goodNeighbours": [
+      "Apple",
+      "Cucumbers",
+      "Lettuce",
+      "Peas"
+    ],
+    "badNeighbours": [
+      "Beans"
+    ],
+    "notes": "Prevents Apple Scab. Said to deter aphids",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Cucumber",
+    "goodNeighbours": [
+      "Basil",
+      "Beans",
+      "Borage",
+      "Broccoli",
+      "Brussel Sprouts",
+      "Cabbage",
+      "Carrot",
+      "Cauliflower",
+      "Corn",
+      "Dill",
+      "Kohl Rabi",
+      "Lettuce",
+      "Lovage",
+      "Marjoram",
+      "Nasturtium",
+      "Parsnip",
+      "Pea",
+      "Radish",
+      "Sunflower",
+      "Tansy"
+    ],
+    "badNeighbours": [
+      "Potato",
+      "Sage",
+      "Strongly Aromatic Herbs"
+    ],
+    "notes": "Bad Neighbours’ roots release substances reducing growth",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Dill",
+    "goodNeighbours": [
+      "Brassicas (Incl: Broccoli",
+      "Cabbage",
+      "Cauliflower)"
+    ],
+    "badNeighbours": [],
+    "notes": "Dill attracts a Cabbage White Butterfly controlling wasp",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Eggplant",
+    "goodNeighbours": [
+      "Beans",
+      "Spinach"
+    ],
+    "badNeighbours": [],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Garlic",
+    "goodNeighbours": [
+      "Apricot",
+      "Cherry",
+      "Mulberry",
+      "Parsnip",
+      "Peach",
+      "Pear",
+      "Raspberry",
+      "Rosemary",
+      "Rose"
+    ],
+    "badNeighbours": [
+      "Beans",
+      "Cabbage",
+      "Peas",
+      "Strawberry"
+    ],
+    "notes": "Deters aphids, especially from roses and raspberry. Repels Cabbage White Butterfly",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Kohl Rabi",
+    "goodNeighbours": [
+      "Beetroot",
+      "Onion"
+    ],
+    "badNeighbours": [
+      "Beans",
+      "Tomato"
+    ],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Leek",
+    "goodNeighbours": [
+      "Carrot",
+      "Celery",
+      "Lovage",
+      "Majoram",
+      "Onion",
+      "Parsnip",
+      "Strawberry"
+    ],
+    "badNeighbours": [
+      "Beans",
+      "Peas",
+      "Parsley"
+    ],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Lettuce",
+    "goodNeighbours": [
+      "Achillea",
+      "Beans",
+      "Beetroot",
+      "Cabbage",
+      "Carrot",
+      "Chervil",
+      "Coreopsis",
+      "Cucumber",
+      "Lovage",
+      "Marjoram",
+      "Marigold (French)",
+      "Onion",
+      "Parsnip",
+      "Pea",
+      "Radish",
+      "Strawberry",
+      "Zinnia"
+    ],
+    "badNeighbours": [
+      "Parsley"
+    ],
+    "notes": "Achillea, Coreopsis & Zinnia attract pollinators and offer shade for lettuce",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Marigolds (French)",
+    "goodNeighbours": [
+      "Numerous vegetables",
+      "including tomato"
+    ],
+    "badNeighbours": [],
+    "notes": "Kills root knot nematodes and eel worm. Will repel white fly amongst tomatoes.",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Melon",
+    "goodNeighbours": [
+      "Radish",
+      "Sweet Corn"
+    ],
+    "badNeighbours": [],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Mint",
+    "goodNeighbours": [
+      "Cabbage",
+      "Tomato"
+    ],
+    "badNeighbours": [],
+    "notes": "Deters pests such as Cabbage White Butterfly, ants and fleas. Dried and placed with clothes will repel clothes moth.",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Nasturtium",
+    "goodNeighbours": [
+      "Cabbages",
+      "Fruit Trees",
+      "Radishes",
+      "Zucchini"
+    ],
+    "badNeighbours": [],
+    "notes": "Flowers repel aphids and codling moth. Cabbage White Butterfly is attracted to this plant, and will seek it out over cabbages",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Onion",
+    "goodNeighbours": [
+      "Beetroot",
+      "Broccoli",
+      "Cabbage",
+      "Carrot",
+      "Chamomile",
+      "Leeks",
+      "Lettuce",
+      "Lovage",
+      "Marjoram",
+      "Parsley",
+      "Parsnip",
+      "Silverbeet",
+      "Strawberry",
+      "Summer Savory",
+      "Tomato"
+    ],
+    "badNeighbours": [
+      "Asparagus",
+      "Beans",
+      "Gladioli",
+      "Peas"
+    ],
+    "notes": "Smell of onion said to deter numerous pests.  Onions release substances reducing growth of Bad Neighbours",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Parsley",
+    "goodNeighbours": [
+      "Asparagus",
+      "Sweet Corn",
+      "Tomato"
+    ],
+    "badNeighbours": [],
+    "notes": "Said to improve flavour of asparagus and tomato",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Peas",
+    "goodNeighbours": [
+      "Beans",
+      "Beetroot",
+      "Brussel Sprouts",
+      "Cabbage",
+      "Carrot",
+      "Cauliflower",
+      "Celery",
+      "Cucumber",
+      "Lettuce",
+      "Lovage",
+      "Marjoram",
+      "Parsnip",
+      "Potato",
+      "Radish",
+      "Sage",
+      "Squash",
+      "Sweet Corn"
+    ],
+    "badNeighbours": [
+      "Chives",
+      "Garlic",
+      "Onion",
+      "Shallots"
+    ],
+    "notes": "Bad Neighbours’ roots release substances reducing growth. Sweet Corn has traditionally been used as “living stakes” for peas",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Potato",
+    "goodNeighbours": [
+      "Beans",
+      "Broccoli",
+      "Brussel Sprouts",
+      "Cabbage",
+      "Cauliflower",
+      "Corn",
+      "Eggplant",
+      "Horseradish",
+      "Lovage",
+      "Marjoram",
+      "Marigold (French)",
+      "Nasturtium",
+      "Parsnip",
+      "Peas",
+      "Sweet Alyssum",
+      "Sweet Corn",
+      "Watermelon"
+    ],
+    "badNeighbours": [
+      "Apple",
+      "Celery",
+      "Cherry",
+      "Cucumber",
+      "Pumpkin",
+      "Raspberry",
+      "Rosemary",
+      "Squash",
+      "Sunflower",
+      "Tomato"
+    ],
+    "notes": "Sweet Alyssum and Marigolds attract beneficials and suppress weeds.  Potatoes release substances reducing growth of Bad Neighbours. Horseradish should be planted at the corners of the patch",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Pumpkin",
+    "goodNeighbours": [
+      "Beans",
+      "Cabbage",
+      "Eggplant",
+      "Peas",
+      "Radish",
+      "Sweet Corn"
+    ],
+    "badNeighbours": [
+      "Potato"
+    ],
+    "notes": "Bad Neighbours’ roots release substances reducing growth",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Radish",
+    "goodNeighbours": [
+      "Beans",
+      "Carrot",
+      "Chervil",
+      "Cucumber",
+      "Sweet Corn",
+      "Cucumber",
+      "Lettuce",
+      "Lovage",
+      "Marjoram",
+      "Nasturtium",
+      "Parsnip",
+      "Pea",
+      "Spinach",
+      "Sweet Corn"
+    ],
+    "badNeighbours": [
+      "Hyssop"
+    ],
+    "notes": "Radish is said to attract leaf miners from Spinach",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Raspberry",
+    "goodNeighbours": [],
+    "badNeighbours": [
+      "Blackberries",
+      "Potato",
+      "Tomato"
+    ],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Rosemary",
+    "goodNeighbours": [
+      "Beans",
+      "Cabbage",
+      "Carrot",
+      "Sage"
+    ],
+    "badNeighbours": [],
+    "notes": "Repels carrot fly.",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Sage",
+    "goodNeighbours": [
+      "Brassicas (Incl: Broccoli",
+      "Cabbage",
+      "Cauliflower)",
+      "Carrot",
+      "Rosemary"
+    ],
+    "badNeighbours": [
+      "Cucumber"
+    ],
+    "notes": "Sage repels the Cabbage White Butterfly",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Silverbeet",
+    "goodNeighbours": [
+      "Beetroot",
+      "Cherry",
+      "Lavender",
+      "Lovage",
+      "Marjoram",
+      "Onion"
+    ],
+    "badNeighbours": [
+      "Basil",
+      "Wormwood"
+    ],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Spinach",
+    "goodNeighbours": [
+      "Celery",
+      "Eggplant",
+      "Strawberries"
+    ],
+    "badNeighbours": [],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Squash",
+    "goodNeighbours": [
+      "Borage",
+      "Lovage",
+      "Marjoram",
+      "Nasturtium",
+      "Peas",
+      "Sunflower",
+      "Sweet Corn",
+      "Tansy"
+    ],
+    "badNeighbours": [
+      "Potato"
+    ],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Strawberry",
+    "goodNeighbours": [
+      "Beans",
+      "Borage",
+      "Chives",
+      "Leek",
+      "Lettuce",
+      "Marigold (French)",
+      "Onion",
+      "Pyrethrum",
+      "Sage",
+      "Spinach"
+    ],
+    "badNeighbours": [
+      "Brassicas (Incl: Broccoli",
+      "Cabbage",
+      "Cauliflower)",
+      "Brussel Sprouts",
+      "Garlic"
+    ],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Sunflower",
+    "goodNeighbours": [
+      "Apricots",
+      "Cucumbers",
+      "Squash"
+    ],
+    "badNeighbours": [
+      "Beans",
+      "Potato"
+    ],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Sweet Corn",
+    "goodNeighbours": [
+      "Beans",
+      "Cucumbers",
+      "Lovage",
+      "Marjoram",
+      "Melon",
+      "Parsnip",
+      "Peas",
+      "Potato",
+      "Pumpkin",
+      "Radish",
+      "Squash",
+      "Zucchini"
+    ],
+    "badNeighbours": [
+      "Cabbage"
+    ],
+    "notes": "Sweet Corn has traditionally been used as “living stakes” for peas. Bad Neighbours’ roots release substances reducing growth",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Tomato",
+    "goodNeighbours": [
+      "Asparagus",
+      "Basil",
+      "Celery",
+      "Borage",
+      "Broccoli",
+      "Brussel Sprouts",
+      "Cabbage",
+      "Carrot",
+      "Cauliflower",
+      "Celery",
+      "Chives",
+      "Dill",
+      "Gooseberry",
+      "Grape",
+      "Hyssop",
+      "Lovage",
+      "Marigold (French)",
+      "Marjoram",
+      "Mint",
+      "Nasturtium",
+      "Onion",
+      "Parsley",
+      "Parsnip",
+      "Turnip"
+    ],
+    "badNeighbours": [
+      "Apricots",
+      "Beetroot",
+      "Fennel",
+      "Kohl Rabi",
+      "Potato",
+      "Rosemary",
+      "Sweet Corn"
+    ],
+    "notes": "Marigolds said to repel white fly and root knot nematode. Bad Neighbours’ roots release substances reducing growth",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Turnip",
+    "goodNeighbours": [
+      "Cucumbers",
+      "Lettuce",
+      "Nasturtium",
+      "Peas",
+      "Tomato"
+    ],
+    "badNeighbours": [],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Watermelon",
+    "goodNeighbours": [
+      "Potato"
+    ],
+    "badNeighbours": [],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Yarrow",
+    "goodNeighbours": [
+      "Most aromatic herbs"
+    ],
+    "badNeighbours": [],
+    "notes": "When planted along pathways, is said to enhance essential oil production and herb flavour.",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Zucchini",
+    "goodNeighbours": [
+      "Lovage",
+      "Marjoram",
+      "Nasturtium",
+      "Sweet Corn"
+    ],
+    "badNeighbours": [],
+    "notes": "",
+    "isGeneralCompanion": false
+  },
+  {
+    "name": "Catnip",
+    "goodNeighbours": [],
+    "badNeighbours": [],
+    "notes": "Repels fleas, ants and rodents.",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Caraway",
+    "goodNeighbours": [],
+    "badNeighbours": [],
+    "notes": "Helps breakdown heavy soils.",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Elderberry",
+    "goodNeighbours": [],
+    "badNeighbours": [],
+    "notes": "A general insecticide, the leaves encourage compost fermentation, the flowers and berries make lovely wine!",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Fennel (not F. vulgare or F.officionale)",
+    "goodNeighbours": [],
+    "badNeighbours": [],
+    "notes": "Repels flies, fleas and ants.",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Hyssop",
+    "goodNeighbours": [],
+    "badNeighbours": [],
+    "notes": "Attracts cabbage white moth keeping brassicas free from infestation.",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Pyrethrum",
+    "goodNeighbours": [],
+    "badNeighbours": [],
+    "notes": "Will repel bugs if grown around the vegetable garden.",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Rue (Rutus, not Peganum)",
+    "goodNeighbours": [],
+    "badNeighbours": [],
+    "notes": "Keeps cats and dogs off garden beds if planted round the borders.",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Tansy (Tanacetum, not Senecio)",
+    "goodNeighbours": [],
+    "badNeighbours": [],
+    "notes": "Repels moths, flies and ants. Plant beneath peach trees to repel harmful flying insects. Tansy leaves assist compost fermentation.",
+    "isGeneralCompanion": true
+  },
+  {
+    "name": "Wormwood (Artemesia, not Ambrosia)",
+    "goodNeighbours": [],
+    "badNeighbours": [],
+    "notes": "Although it can inhibit the growth of plants near it, wormwood does repel moths, flies and fleas and keeps animals off the garden.",
+    "isGeneralCompanion": true
+  }
+]
