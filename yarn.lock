@@ -5365,6 +5365,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@testing-library/dom@npm:^8.16.0":
+  version: 8.16.0
+  resolution: "@testing-library/dom@npm:8.16.0"
+  dependencies:
+    "@babel/code-frame": ^7.10.4
+    "@babel/runtime": ^7.12.5
+    "@types/aria-query": ^4.2.0
+    aria-query: ^5.0.0
+    chalk: ^4.1.0
+    dom-accessibility-api: ^0.5.9
+    lz-string: ^1.4.4
+    pretty-format: ^27.0.2
+  checksum: 4a4b7e2ee1d3543b2935e60a0d85ac041ebe36fc6fbb3cbdf86898cd9947410ca75ad78f88e91b6eb146fb76f3ef102a1e24495761e1a5b8fe60aa82d3edd874
+  languageName: node
+  linkType: hard
+
 "@testing-library/jest-dom@npm:5.16.4":
   version: 5.16.4
   resolution: "@testing-library/jest-dom@npm:5.16.4"
@@ -5424,6 +5440,15 @@ __metadata:
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
   checksum: 1011c63521685bfb758d6c8d4fed5f16de6ebc28f5817d017364302d7b69f00acacb9dea1a1bf4a5efdf6e166f66541a42b6c6e8e08914310cd23a1b1af98e98
+  languageName: node
+  linkType: hard
+
+"@testing-library/user-event@npm:^14.2.5":
+  version: 14.2.5
+  resolution: "@testing-library/user-event@npm:14.2.5"
+  peerDependencies:
+    "@testing-library/dom": ">=7.21.4"
+  checksum: b585e1e137e4c2a1d6b11e7eb59fc8c8e49b4d7be41e24fbbdff1f01aef65096e3793fe16198f525fcbeafc5ec3605333abf518b02cac50c9a188ec06acc7009
   languageName: node
   linkType: hard
 
@@ -21038,7 +21063,10 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@redwoodjs/core": 2.0.0
+    "@testing-library/dom": ^8.16.0
+    "@testing-library/user-event": ^14.2.5
     classnames: ^2.3.1
+    lodash: ^4.17.21
   languageName: unknown
   linkType: soft
 
