@@ -23,9 +23,14 @@ describe('SearchBox', () => {
     return render(<SearchBox {...props} />)
   }
   it('renders successfully', () => {
+    const baseClasses = ['p-2', 'border-2', 'border-gray-300', 'rounded-md']
     setUp()
 
-    expect(screen.getByPlaceholderText('Start typing...')).toBeInTheDocument()
+    const searchbox = screen.getByPlaceholderText('Start typing...')
+    expect(searchbox).toBeInTheDocument()
+    for (const className of baseClasses) {
+      expect(searchbox).toHaveClass(className)
+    }
   })
 
   it('allows custom placeholder', () => {
@@ -35,20 +40,6 @@ describe('SearchBox', () => {
       screen.getByPlaceholderText('Custom placeholder')
     ).toBeInTheDocument()
   })
-
-  // it('calls onSearch with contents', async () => {
-  //   const mockOnSearch = jest.fn()
-  //   setUp({ onSearch: mockOnSearch })
-  //
-  //   await userEvent.type(
-  //     screen.getByPlaceholderText('Start typing...'),
-  //     'Dummy Search'
-  //   )
-  //
-  //   await sleep(250)
-  //
-  //   expect(mockOnSearch).toHaveBeenCalledWith('Dummy Search')
-  // })
 
   it('debounces the onSearch callback', async () => {
     const mockOnSearch = jest.fn()
@@ -69,5 +60,12 @@ describe('SearchBox', () => {
 
     expect(mockOnSearch).toHaveBeenCalledTimes(1)
     expect(mockOnSearch).toHaveBeenCalledWith('ThisShouldFireOnce')
+  })
+
+  it('correctly applies classes', () => {
+    setUp({ className: 'foo bar' })
+
+    expect(screen.getByPlaceholderText('Start typing...')).toHaveClass('foo')
+    expect(screen.getByPlaceholderText('Start typing...')).toHaveClass('bar')
   })
 })
