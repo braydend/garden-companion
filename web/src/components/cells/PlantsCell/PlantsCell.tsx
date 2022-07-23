@@ -5,11 +5,13 @@ import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
 import { PlantsList } from 'src/components/organisms'
 
 export const QUERY = gql`
-  query FindPlants {
-    plants {
-      id
-      name
-      notes
+  query FindPlants($page: Int, $perPage: Int) {
+    plantPage(page: $page, perPage: $perPage) {
+      plants {
+        id
+        name
+        notes
+      }
     }
   }
 `

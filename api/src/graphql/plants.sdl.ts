@@ -9,7 +9,13 @@ export const schema = gql`
     negativeCompanionsRelation: [Plant]!
   }
 
+  type PlantPage {
+    plants: [Plant!]!
+    count: Int!
+  }
+
   type Query {
+    plantPage(page: Int, perPage: Int!): PlantPage
     plants: [Plant!]! @requireAuth
     plant(id: String!): Plant @requireAuth
   }

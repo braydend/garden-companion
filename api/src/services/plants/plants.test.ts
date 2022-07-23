@@ -1,3 +1,5 @@
+import plantsPage from 'web/src/pages/Plant/PlantsPage/PlantsPage'
+
 import { plants, plant, createPlant, updatePlant, deletePlant } from './plants'
 import type { StandardScenario } from './plants.scenarios'
 
@@ -16,6 +18,12 @@ describe('plants', () => {
 
   scenario('returns a single plant', async (scenario: StandardScenario) => {
     const result = await plant({ id: scenario.plant.one.id })
+
+    expect(result).toEqual(scenario.plant.one)
+  })
+
+  scenario('returns a page of plants', async (scenario: StandardScenario) => {
+    const result = await plantsPage({ id: scenario.plant.one.id })
 
     expect(result).toEqual(scenario.plant.one)
   })

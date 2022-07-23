@@ -6,6 +6,21 @@ import type {
 
 import { db } from 'src/lib/db'
 
+export const plantPage: QueryResolvers['plantPage'] = ({
+  page = 1,
+  perPage,
+}) => {
+  const offset = (page - 1) * perPage
+
+  return {
+    plants: db.plant.findMany({
+      take: perPage,
+      skip: offset,
+    }),
+    count: db.plant.count(),
+  }
+}
+
 export const plants: QueryResolvers['plants'] = () => {
   return db.plant.findMany()
 }
